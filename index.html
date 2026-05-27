@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domicilio Living</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Jost", sans-serif;
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <section
+      class="relative w-full min-h-screen bg-cover bg-center bg-no-repeat"
+      style="background-image: url(&quot;static/heroImage.png&quot;)"
+    >
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <header class="relative z-20 w-full">
+        <nav
+          class="w-full flex items-center justify-between lg:justify-center px-5 sm:px-8 md:px-10 lg:px-12 xl:px-16 pt-5 sm:pt-7 md:pt-10 lg:pt-[66px]"
+        >
+          <img
+            src="static/logo.png"
+            alt="Logo"
+            class="w-[140px] sm:w-[170px] md:w-[190px] lg:hidden object-contain"
+          />
+
+          <div
+            class="hidden lg:flex items-center text-white font-normal text-[18px] xl:text-[20px] 2xl:text-[24px] leading-[100%]"
+          >
+            <div class="flex items-center gap-6 xl:gap-10 2xl:gap-[70px]">
+              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+                Projects
+              </a>
+
+              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+                Services
+              </a>
+
+              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+                Partner Brands
+              </a>
+
+              <img
+                src="static/logo.png"
+                alt="Logo"
+                class="w-[180px] xl:w-[220px] 2xl:w-[260px] object-contain shrink-0"
+              />
+
+              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+                Solutions
+              </a>
+
+              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+                About Us
+              </a>
+
+              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+                Contact
+              </a>
+            </div>
+          </div>
+
+          <button class="lg:hidden text-white flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8 sm:w-9 sm:h-9"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </nav>
+      </header>
+    </section>
+    <section class="bg-[#F4F4F4] py-16 sm:py-20 md:py-24 lg:py-32 px-6">
+      <div class="max-w-[1200px] mx-auto text-center">
+        <h2
+          class="text-[#1E1E1E] font-normal leading-[100%] tracking-[0%] text-[32px] sm:text-[40px] md:text-[46px] lg:text-[52px]"
+          style="font-family: &quot;Kugile&quot;, serif"
+        >
+          Integrated Interior Solutions for Luxury Residences
+        </h2>
+
+        <p
+          class="mt-8 max-w-[920px] mx-auto text-[#2D2D2D] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[100%] tracking-[0%] text-center font-normal"
+          style="font-family: &quot;Jost&quot;, sans-serif"
+        >
+          Design planning, premium European brands, and full project execution
+          all managed through one integrated partner. We guide the entire
+          process from concept to completion, ensuring the right materials,
+          brands, and systems come together seamlessly.
+        </p>
+
+        <button
+          class="mt-10 w-fit h-[45px] px-[25px] py-[12px] gap-[5px] bg-[#1E1E1E] text-white text-[16px] font-normal hover:bg-black transition duration-300 flex items-center justify-center mx-auto"
+          style="font-family: &quot;Jost&quot;, sans-serif"
+        >
+          Start Your Project
+        </button>
+      </div>
+    </section>
+    <section
+      class="bg-[#F7F5F0] border border-[#E0E0E0] py-16 md:py-24 lg:py-32 px-6 md:px-10 lg:px-16 overflow-hidden"
+    >
+      <div
+        class="max-w-[1800px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center"
+      >
+        <div class="max-w-[650px]">
+          <h2
+            class="text-[#1A1A1A] font-normal leading-[100%] tracking-[0%] text-[38px] sm:text-[44px] md:text-[48px] lg:text-[52px]"
+            style="font-family: &quot;Kugile&quot;, serif"
+          >
+            How We Work
+          </h2>
+
+          <p
+            class="mt-8 text-[#1A1A1A] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[160%] tracking-[0%] font-normal"
+            style="font-family: &quot;Jost&quot;, sans-serif"
+          >
+            Every project follows a clear and structured approach. From
+            understanding your vision to selecting the right brands and managing
+            delivery, we ensure each step is carefully coordinated
+          </p>
+
+          <button
+            class="mt-10 bg-[#1A1A1A] text-white px-[25px] py-[12px] text-[16px] md:text-[18px] font-normal hover:bg-black transition duration-300"
+            style="font-family: &quot;Jost&quot;, sans-serif"
+          >
+            Start Your Project
+          </button>
+        </div>
+
+        <div class="relative">
+          <div
+            class="hidden md:block absolute left-[45px] top-[80px] bottom-[80px] border-l border-dashed border-[#1A1A1A]"
+          ></div>
+
+          <div class="space-y-14 md:space-y-20">
+            <div class="flex items-start gap-6 md:gap-8">
+              <div
+                class="w-[68px] h-[68px] md:w-[90px] md:h-[90px] rounded-full bg-[#1A1A1A] flex items-center justify-center text-white text-[28px] md:text-[36px] font-normal shrink-0"
+                style="font-family: &quot;Kugile&quot;, serif"
+              >
+                01
+              </div>
+
+              <div>
+                <h3
+                  class="text-[#1A1A1A] font-normal leading-[100%] text-[30px] sm:text-[34px] md:text-[38px] lg:text-[42px]"
+                  style="font-family: &quot;Kugile&quot;, serif"
+                >
+                  Understand the Project
+                </h3>
+
+                <p
+                  class="mt-4 text-[#1A1A1A] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[140%] font-normal"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                >
+                  We review your spatial requirements, design intent, and
+                  project scope.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-6 md:gap-8">
+              <div
+                class="w-[68px] h-[68px] md:w-[90px] md:h-[90px] rounded-full bg-[#1A1A1A] flex items-center justify-center text-white text-[28px] md:text-[36px] font-normal shrink-0"
+                style="font-family: &quot;Kugile&quot;, serif"
+              >
+                02
+              </div>
+
+              <div>
+                <h3
+                  class="text-[#1A1A1A] font-normal leading-[100%] text-[30px] sm:text-[34px] md:text-[38px] lg:text-[42px]"
+                  style="font-family: &quot;Kugile&quot;, serif"
+                >
+                  Curate the Right Brands
+                </h3>
+
+                <p
+                  class="mt-4 text-[#1A1A1A] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[140%] font-normal"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                >
+                  We align suitable European brands, materials, and systems.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-6 md:gap-8">
+              <div
+                class="w-[68px] h-[68px] md:w-[90px] md:h-[90px] rounded-full bg-[#1A1A1A] flex items-center justify-center text-white text-[28px] md:text-[36px] font-normal shrink-0"
+                style="font-family: &quot;Kugile&quot;, serif"
+              >
+                03
+              </div>
+
+              <div>
+                <h3
+                  class="text-[#1A1A1A] font-normal leading-[100%] text-[30px] sm:text-[34px] md:text-[38px] lg:text-[42px]"
+                  style="font-family: &quot;Kugile&quot;, serif"
+                >
+                  Coordinate & Deliver
+                </h3>
+                <p
+                  class="mt-4 text-[#1A1A1A] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[140%] font-normal"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                >
+                  We manage specification, logistics, and integration through
+                  execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-[70px] px-6 md:px-10 lg:px-16 overflow-">
+      <div class="max-w-[1800px] mx-auto text-center">
+        <h2
+          class="text-[#1A1A1A] font-normal leading-[100%] tracking-[0%] text-[34px] sm:text-[40px] md:text-[46px] lg:text-[52px]"
+          style="font-family: &quot;Kugile&quot;, serif"
+        >
+          Our Partner Brands
+        </h2>
+        <p
+          class="mt-4 md:mt-6 max-w-[1100px] mx-auto text-[#1A1A1A] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[140%] tracking-[0%] font-normal text-center"
+          style="font-family: &quot;Jost&quot;, sans-serif"
+        >
+          We collaborate with internationally recognised European manufacturers
+          across kitchens, furniture, surfaces and interior systems.
+        </p>
+
+        <div
+          class="mt-6 md:mt-[30px] flex items-center gap-4 justify-between overflow-x-auto hide-scrollbar"
+        >
+          <img
+            src="static/brand-1.png"
+            alt="Brand 1"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+
+          <img
+            src="static/brand-2.png"
+            alt="Brand 2"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+
+          <img
+            src="static/brand-3.png"
+            alt="Brand 3"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+
+          <img
+            src="static/brand-4.png"
+            alt="Brand 4"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+
+          <img
+            src="static/brand-5.png"
+            alt="Brand 5"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+
+          <img
+            src="static/brand-6.png"
+            alt="Brand 6"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+
+          <img
+            src="static/brand-7.png"
+            alt="Brand 7"
+            class="h-[45px] sm:h-[55px] md:h-[65px] lg:h-[70px] w-auto object-contain"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#F4F3EF] py-[60px] md:py-[80px] lg:py-[100px] px-5 md:px-8 lg:px-10 overflow-hidden"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <div class="text-center">
+          <h2
+            class="text-[#323232] text-[34px] sm:text-[42px] md:text-[56px] lg:text-[72px] leading-[100%] font-normal"
+            style="font-family: &quot;Kugile&quot;, serif"
+          >
+            Latest From Our Partners
+          </h2>
+
+          <p
+            class="mt-5 text-[#323232] text-[16px] sm:text-[18px] md:text-[22px] leading-[140%] font-normal"
+            style="font-family: &quot;Jost&quot;, sans-serif"
+          >
+            A curated highlight from our partner network.
+          </p>
+        </div>
+        <div
+          class="mt-14 grid grid-cols-1 lg:grid-cols-[58%_42%] gap-10 lg:gap-[70px] items-stretch"
+        >
+          <div class="h-full">
+            <img
+              src="static/partnerBig.png"
+              alt="Partner Kitchen"
+              class="w-full h-full min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-[611px] object-cover"
+            />
+          </div>
+
+          <div class="flex flex-col h-full">
+            <div>
+              <h3
+                class="text-[#323232] text-[26px] sm:text-[32px] md:text-[38px] lg:text-[44px] leading-[120%] font-normal"
+                style="font-family: &quot;Kugile&quot;, serif"
+              >
+                Pedini —
+                <span style="font-family: &quot;Jost&quot;, sans-serif">
+                  New Kitchen Collection 2025
+                </span>
+              </h3>
+
+              <p
+                class="mt-7 text-[#323232] text-[17px] sm:text-[18px] md:text-[21px] lg:text-[24px] leading-[170%] font-normal"
+                style="font-family: &quot;Jost&quot;, sans-serif"
+              >
+                Pedini introduces its latest kitchen system, defined by refined
+                materials, structural clarity and advanced engineering. Now
+                available through Domicilio Living with full specification and
+                integration support.
+              </p>
+
+              <!-- Button -->
+              <button
+                class="mt-8 h-[45px] px-[25px] bg-[#1A1A1A] text-white text-[15px] md:text-[16px] font-normal hover:bg-black transition w-fit"
+                style="font-family: &quot;Jost&quot;, sans-serif"
+              >
+                Explore Pedini
+              </button>
+            </div>
+
+            <!-- Bottom Image -->
+            <div class="mt-auto pt-10">
+              <img
+                src="static/partnerSmall.png"
+                alt="Partner Interior"
+                class="w-full h-[180px] sm:h-[210px] md:h-[230px] lg:h-[251px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#F4F3EF] py-[60px] md:py-[80px] lg:py-[100px] px-5 md:px-8 lg:px-10 overflow-hidden"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <div class="text-center">
+          <h2
+            class="text-[#323232] text-[36px] sm:text-[42px] md:text-[48px] lg:text-[52px] leading-[100%] tracking-[0%] font-normal"
+            style="font-family: &quot;Kugile&quot;, serif"
+          >
+            Book a Consultation
+          </h2>
+          <p
+            class="mt-8 max-w-[1200px] mx-auto text-[#323232] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[100%] tracking-[0%] font-normal"
+            style="font-family: &quot;Jost&quot;, sans-serif"
+          >
+            Share a few details about your project and our team will guide you
+            through design planning, brand selection and execution.
+          </p>
+        </div>
+        <div
+          class="mt-14 grid grid-cols-1 lg:grid-cols-[42%_58%] gap-10 lg:gap-9 items-stretch"
+        >
+          <div class="flex flex-col h-full">
+            <form class="flex flex-col h-full">
+              <div class="border-b border-[#7A7A7A] pb-3">
+                <input
+                  type="text"
+                  placeholder="⌂ Name*"
+                  class="w-full bg-transparent outline-none text-[#323232] text-[16px] md:text-[18px] placeholder:text-[#323232]"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                />
+              </div>
+              <div class="border-b border-[#7A7A7A] pb-3 mt-10">
+                <input
+                  type="text"
+                  placeholder="✦ Project Type*"
+                  class="w-full bg-transparent outline-none text-[#323232] text-[16px] md:text-[18px] placeholder:text-[#323232]"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                />
+              </div>
+              <div class="border-b border-[#7A7A7A] pb-3 mt-10">
+                <input
+                  type="email"
+                  placeholder="✉ Email Address*"
+                  class="w-full bg-transparent outline-none text-[#323232] text-[16px] md:text-[18px] placeholder:text-[#323232]"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                />
+              </div>
+              <div class="border-b border-[#7A7A7A] pb-3 mt-10">
+                <input
+                  type="text"
+                  placeholder="◔ Phone Number*"
+                  class="w-full bg-transparent outline-none text-[#323232] text-[16px] md:text-[18px] placeholder:text-[#323232]"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                />
+              </div>
+              <div class="border-b border-[#7A7A7A] pb-3 mt-10 flex-1">
+                <textarea
+                  placeholder="✎ Your Requirement*"
+                  class="w-full min-h-[80px] bg-transparent outline-none resize-none text-[#323232] text-[16px] md:text-[18px] placeholder:text-[#323232]"
+                  style="font-family: &quot;Jost&quot;, sans-serif"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="mt-6 w-full h-[45px] px-[25px] py-[12px] flex items-center justify-center gap-[5px] bg-[#323232] text-white text-[16px] font-normal hover:bg-black transition"
+                style="font-family: &quot;Jost&quot;, sans-serif"
+              >
+                Request Consultation
+              </button>
+            </form>
+          </div>
+          <div class="h-full">
+            <img
+              src="static/consultation.png"
+              alt="Consultation"
+              class="w-full h-full min-h-[350px] md:min-h-[500px] lg:min-h-[620px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
