@@ -36,54 +36,79 @@
       style="background-image: url(&quot;static/heroImage.png&quot;)"
     >
       <div class="absolute inset-0 bg-black/30"></div>
-
-      <header class="relative z-20 w-full">
+      <header class="relative z-50 w-full">
         <nav
           class="w-full flex items-center justify-between lg:justify-center px-5 sm:px-8 md:px-10 lg:px-12 xl:px-16 pt-5 sm:pt-7 md:pt-10 lg:pt-[66px]"
         >
+          <!-- Mobile Logo -->
           <img
             src="static/logo.png"
             alt="Logo"
             class="w-[140px] sm:w-[170px] md:w-[190px] lg:hidden object-contain"
           />
 
+          <!-- Desktop Nav -->
           <div
             class="hidden lg:flex items-center text-white font-normal text-[18px] xl:text-[20px] 2xl:text-[24px] leading-[100%]"
+            style="font-family: &quot;Jost&quot;, sans-serif"
           >
             <div class="flex items-center gap-6 xl:gap-10 2xl:gap-[70px]">
-              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+              <a
+                href="#projects"
+                class="hover:opacity-80 transition whitespace-nowrap"
+              >
                 Projects
               </a>
 
-              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+              <a
+                href="#services"
+                class="hover:opacity-80 transition whitespace-nowrap"
+              >
                 Services
               </a>
 
-              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+              <a
+                href="#partners"
+                class="hover:opacity-80 transition whitespace-nowrap"
+              >
                 Partner Brands
               </a>
 
-              <img
-                src="static/logo.png"
-                alt="Logo"
-                class="w-[180px] xl:w-[220px] 2xl:w-[260px] object-contain shrink-0"
-              />
+              <a href="#hero">
+                <img
+                  src="static/logo.png"
+                  alt="Logo"
+                  class="w-[180px] xl:w-[220px] 2xl:w-[260px] object-contain shrink-0"
+                />
+              </a>
 
-              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+              <a
+                href="#solutions"
+                class="hover:opacity-80 transition whitespace-nowrap"
+              >
                 Solutions
               </a>
 
-              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+              <a
+                href="#about"
+                class="hover:opacity-80 transition whitespace-nowrap"
+              >
                 About Us
               </a>
 
-              <a href="#" class="hover:opacity-80 transition whitespace-nowrap">
+              <a
+                href="#consultation"
+                class="hover:opacity-80 transition whitespace-nowrap"
+              >
                 Contact
               </a>
             </div>
           </div>
 
-          <button class="lg:hidden text-white flex items-center justify-center">
+          <button
+            id="menuBtn"
+            class="lg:hidden text-white flex items-center justify-center"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-8 h-8 sm:w-9 sm:h-9"
@@ -100,9 +125,52 @@
             </svg>
           </button>
         </nav>
+
+        <div
+          id="mobileMenu"
+          class="fixed top-0 right-[-100%] w-[280px] h-screen bg-[#1A1A1A] z-[999] transition-all duration-300 flex flex-col px-6 py-8"
+        >
+          <!-- Top -->
+          <div class="flex items-center justify-between">
+            <img
+              src="static/logo.png"
+              alt="Logo"
+              class="w-[130px] object-contain"
+            />
+
+            <button id="closeMenu" class="text-white text-3xl leading-none">
+              ×
+            </button>
+          </div>
+
+          <div
+            class="mt-14 flex flex-col gap-7 text-white text-[18px]"
+            style="font-family: &quot;Jost&quot;, sans-serif"
+          >
+            <a href="#projects" class="mobile-link"> Projects </a>
+
+            <a href="#services" class="mobile-link"> Services </a>
+
+            <a href="#partners" class="mobile-link"> Partner Brands </a>
+
+            <a href="#solutions" class="mobile-link"> Solutions </a>
+
+            <a href="#consultation" class="mobile-link"> About Us </a>
+
+            <a href="#consultation" class="mobile-link"> Contact </a>
+          </div>
+        </div>
+
+        <div
+          id="overlay"
+          class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300 z-[998]"
+        ></div>
       </header>
     </section>
-    <section class="bg-[#F4F4F4] py-16 sm:py-20 md:py-24 lg:py-32 px-6">
+    <section
+      class="bg-[#F4F4F4] py-16 sm:py-20 md:py-24 lg:py-32 px-6"
+      id="projects"
+    >
       <div class="max-w-[1200px] mx-auto text-center">
         <h2
           class="text-[#1E1E1E] font-normal leading-[100%] tracking-[0%] text-[32px] sm:text-[40px] md:text-[46px] lg:text-[52px]"
@@ -130,6 +198,7 @@
       </div>
     </section>
     <section
+      id="services"
       class="bg-[#F7F5F0] border border-[#E0E0E0] py-16 md:py-24 lg:py-32 px-6 md:px-10 lg:px-16 overflow-hidden"
     >
       <div
@@ -245,7 +314,7 @@
         </div>
       </div>
     </section>
-    <section class="py-[70px] px-6 md:px-10 lg:px-16 overflow-">
+    <section id="partners" class="py-[70px] px-6 md:px-10 lg:px-16 overflow-">
       <div class="max-w-[1800px] mx-auto text-center">
         <h2
           class="text-[#1A1A1A] font-normal leading-[100%] tracking-[0%] text-[34px] sm:text-[40px] md:text-[46px] lg:text-[52px]"
@@ -309,6 +378,7 @@
       </div>
     </section>
     <section
+      id="solutions"
       class="bg-[#F4F3EF] py-[60px] md:py-[80px] lg:py-[100px] px-5 md:px-8 lg:px-10 overflow-hidden"
     >
       <div class="max-w-[1440px] mx-auto">
@@ -382,6 +452,7 @@
       </div>
     </section>
     <section
+      id="consultation"
       class="bg-[#F4F3EF] py-[60px] md:py-[80px] lg:py-[100px] px-5 md:px-8 lg:px-10 overflow-hidden"
     >
       <div class="max-w-[1440px] mx-auto">
@@ -463,5 +534,32 @@
         </div>
       </div>
     </section>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("overlay");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      // Open Menu
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.style.right = "0";
+        overlay.classList.remove("opacity-0", "invisible");
+      });
+
+      // Close Menu
+      function closeSidebar() {
+        mobileMenu.style.right = "-100%";
+        overlay.classList.add("opacity-0", "invisible");
+      }
+
+      closeMenu.addEventListener("click", closeSidebar);
+      overlay.addEventListener("click", closeSidebar);
+
+      // Close On Link Click
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", closeSidebar);
+      });
+    </script>
   </body>
 </html>
